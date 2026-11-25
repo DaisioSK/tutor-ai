@@ -1,5 +1,12 @@
 # tutor-ai
 
+**See it first:** read Act 1 of a generated story guide in the browser — [English](https://daisiosk.github.io/tutor-ai/examples/restaurant-story-act1.html?lang=en) · [中文](https://daisiosk.github.io/tutor-ai/examples/restaurant-story-act1.html?lang=zh) — or download the phone-sized PDF ([English](examples/restaurant-story-act1.en.phone.pdf) · [中文](examples/restaurant-story-act1.zh.phone.pdf)).
+
+<p>
+<img src="examples/img/en-p3.png" width="300" alt="Story cards, English">
+<img src="examples/img/zh-p3.png" width="300" alt="Story cards, Chinese">
+</p>
+
 tutor-ai is a set of [Claude Code](https://docs.claude.com/en/docs/claude-code) skills that turn a course's lecture slides (PDF) into structured study material: a concept map with prerequisites, a teaching handout that tells the whole course as one story, worked-exercise breakdowns, and a printable exam cheat sheet. It is meant for a student who has to understand a dense course quickly and only has the slides to go on (no textbook, little time), and who wants every claim in the generated material to point back to a slide page they can check.
 
 The skill instructions and the generated material are written in Chinese, with English technical terms kept alongside. The pipeline itself does not depend on the language of the slides.
@@ -76,9 +83,9 @@ After the review, several fixes were added. `scan` now has to write a page-to-co
 
 ## Showcase
 
-[`examples/restaurant-story-act1.html`](examples/restaurant-story-act1.html) is a single self-contained HTML file you can open offline. It is the first act (3 episodes, 22 cards) of a five-act `story-cards` guide built for a graduate course on computer systems performance. The story world is a restaurant: slow service stands for latency, the kitchen manager for the OS kernel, the stoves for CPUs.
+[Read it online](https://daisiosk.github.io/tutor-ai/examples/restaurant-story-act1.html) (a toggle at the top right switches between Chinese and English; it follows your browser language by default, and `?lang=en` / `?lang=zh` pick one explicitly). The source is [`examples/restaurant-story-act1.html`](examples/restaurant-story-act1.html), a single self-contained HTML file that also opens offline; phone-sized PDFs (110 × 195 mm, single column) sit next to it. It is the first act (3 episodes, 22 cards) of a five-act `story-cards` guide built for a graduate course on computer systems performance. The story world is a restaurant: slow service stands for latency, the kitchen manager for the OS kernel, the stoves for CPUs.
 
-- The story is in Chinese. An English toggle may be added later.
+- The story was generated in Chinese; the English version is a translation of it, with the same card structure.
 - Each card cites the lecture slide pages it was built from. The slides themselves are not included.
 - Exam-related annotations have been removed from this public excerpt.
 
